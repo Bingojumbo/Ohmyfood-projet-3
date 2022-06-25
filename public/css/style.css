@@ -1,0 +1,149 @@
+/* colors */
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/*colors*/
+/*text font*/
+/*button*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.btn {
+  border-radius: 60px;
+  height: 65px;
+  width: 290px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Roboto", "sans-serif";
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-style: none;
+  box-shadow: 2px 5px 5px rgba(206, 201, 201, 0.726);
+}
+.btn:hover {
+  background: linear-gradient(#a16be0, #ff93e1);
+  box-shadow: 5px 5px 5px 2px rgba(157, 148, 148, 0.726);
+  cursor: pointer;
+}
+.btn__btn-explorer {
+  margin-top: -3px;
+}
+
+.site_presentation {
+  font-family: "Roboto", "sans-serif";
+  background-color: #f5f4f4;
+  text-align: center;
+  height: 25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.site_presentation h1 {
+  margin-bottom: -0.5em;
+  word-spacing: 0.2em;
+  margin-top: -2em;
+}
+.site_presentation p {
+  font-size: 1.3em;
+  margin-top: -55px;
+  margin-bottom: -50px;
+  font-weight: 100;
+}
+
+/*steps*/
+.steps {
+  margin-top: 2.5em;
+  font-family: "Roboto", "sans-serif";
+}
+.steps h1 {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+.steps h3 {
+  margin-right: auto;
+  flex-basis: 60%;
+}
+
+.steps i {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  flex-basis: 5%;
+  color: #767b7b;
+  font-size: 1.8em;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.2em;
+  height: 70px;
+  border-radius: 25px;
+  position: relative;
+  background: rgb(236, 233, 233);
+  box-shadow: 2px 5px 5px rgba(206, 201, 201, 0.726);
+  background-color: #f5f4f4;
+}
+.choice:hover {
+  background-color: #efe6fa;
+  color: #9356DC;
+  cursor: pointer;
+}
+.choice:hover > i {
+  color: #9356DC;
+}
+.choice:hover > h3 {
+  color: black;
+}
+
+.number {
+  position: absolute;
+  background-color: #9356DC;
+  height: 1.9em;
+  width: 1.9em;
+  border-radius: 60px;
+  left: -0.5em;
+  text-align: center;
+}
+
+.number p {
+  justify-self: center;
+  color: white;
+  position: absolute;
+  left: 0.6em;
+  top: 0.4em;
+}
+
+.header {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font: "Shrikhand";
+}
+
+.icon_location {
+  color: #444747;
+  background-color: rgb(236, 233, 233);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: lighter;
+  box-shadow: 5px 5px 5px 2px rgba(206, 201, 201, 0.726) inset;
+}
+.icon_location i {
+  padding-right: 2rem;
+}
+.icon_location p {
+  font-family: "Roboto", "sans-serif";
+}
+
+/*# sourceMappingURL=style.css.map */

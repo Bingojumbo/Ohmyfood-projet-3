@@ -1,0 +1,102 @@
+.site_presentation {
+    @include text-regular;
+    @include back-colour;
+    text-align: center;
+    height: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & h1{
+        
+        margin-bottom: -0.5em;
+        word-spacing: 0.2em;
+        margin-top: -2em;
+    }
+
+    & p{
+        font-size: 1.3em;
+        margin-top: -55px;
+        margin-bottom: -50px;
+        font-weight: 100;
+    }
+}
+
+/*steps*/
+
+.steps{
+   margin-top: 2.5em;   
+   @include text-regular;
+   & h1{
+    margin-bottom: 1em;
+    margin-left: 1em;
+   }   
+}
+
+.steps h3{
+    
+    margin-right: auto;
+    flex-basis: 60%;
+}
+
+.steps i{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    flex-basis: 5%;
+    @include colour-icon;
+    font-size: 1.8em;
+}
+
+
+
+.choice
+{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.2em;
+    height: 70px;
+    border-radius: 25px;
+    position: relative;
+    background: $colour-background;
+    @include box-shadow;
+    @include back-colour;  
+
+    &:hover{
+        background-color: adjust-color($color: $color-primary, $hue: 0, $saturation: 0%, $lightness: 34%, $alpha: 1.0);
+        color: $color-primary;
+        cursor: pointer;
+    }
+
+    &:hover > i{
+        color: $color-primary;
+    }
+
+    &:hover > h3{
+        color: black;
+    }
+
+   
+}
+
+.number{
+    position: absolute;
+    background-color: $color-primary;
+    height: 1.9em;
+    width: 1.9em;
+    border-radius: 60px;
+    left: -0.5em;
+    text-align: center;    
+}
+
+.number p {
+    justify-self: center;
+    color: white;
+    position: absolute;
+    left: 0.6em;
+    top: 0.4em;
+}

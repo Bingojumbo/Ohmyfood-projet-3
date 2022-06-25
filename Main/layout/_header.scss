@@ -1,0 +1,37 @@
+.header
+{
+   text-align: center;
+   margin-top: 3rem;
+   margin-bottom: 1.5rem;
+   font: 'Shrikhand';
+
+   
+}
+
+.icon_location
+{
+color: $colour-icon;
+background-color: $colour-background;
+height: 5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1rem;
+font-weight: lighter;
+
+box-shadow: 5px 5px 5px 2px $colour-shadow inset;
+
+   & i{      
+      padding-right: 2rem;
+   }
+
+   & p{
+      @include text-regular;
+      
+   }
+
+}
+
+
+
+
