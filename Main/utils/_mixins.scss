@@ -11,6 +11,8 @@
 }
 
 
+
+
 @mixin colour-btn(){
     background: linear-gradient($color-secondary, $color-primary);    
     border-style: none;
@@ -35,6 +37,10 @@
     font-family: 'Roboto', 'sans-serif';
 }
 
+@mixin text-color($color:$colour-tertiary){
+    color: darken($color, 40%);
+}
+
 /*button*/
 
 @mixin btn {
@@ -50,4 +56,16 @@
 @mixin box-shadow {
     box-shadow: 2px 5px 5px $colour-shadow; 
 }
+
+/* restaurants page acceuil */
+
+@mixin border-radius-page {
+    border-radius: 30px;    
+}
+
+@mixin border-radius-image {
+    border-radius: 15px 15px 0 0;
+}
+
+
 
