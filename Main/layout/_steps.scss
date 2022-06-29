@@ -1,0 +1,82 @@
+.steps{
+    margin-top: 2.5em;   
+    @include text-regular;
+    & h1{
+     margin-bottom: 1em;
+     margin-left: 1em;
+    }   
+ }
+ 
+ .steps h3{
+     
+     margin-right: auto;
+     flex-basis: 60%;
+ }
+ 
+ .steps i{
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+     flex-basis: 5%;
+     @include colour-icon;
+     font-size: 1.8em;
+ }
+ 
+ 
+ 
+ .choice
+ {
+     display: flex;
+     align-items: center;
+     width: 90%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 1.2em;
+     height: 60px;
+     border-radius: 25px;
+     position: relative;
+     background: $colour-background;
+     @include box-shadow;
+     @include back-colour;  
+
+    
+
+ 
+     &:hover{
+         background-color: adjust-color($color: $color-primary, $hue: 0, $saturation: 0%, $lightness: 34%, $alpha: 1.0);
+         color: $color-primary;
+         cursor: pointer;
+     }
+ 
+     &:hover > i{
+         color: $color-primary;
+     }
+ 
+     &:hover > h3{
+         color: black;
+     }
+ 
+    
+ }
+
+ .choice h3{
+    font-size: 1.1rem;
+ }
+ 
+ .number{
+     position: absolute;
+     background-color: $color-primary;
+     height: 1.9em;
+     width: 1.9em;
+     border-radius: 60px;
+     left: -0.6em;
+     text-align: center;    
+ }
+ 
+ .number p {
+     justify-self: center;
+     color: white;
+     position: absolute;
+     left: 0.7em;
+     top: 0.4em;
+ }

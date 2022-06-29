@@ -1,10 +1,10 @@
 /* colors */
 /* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /*colors*/
 /*text font*/
 /*button*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -53,7 +53,34 @@
   font-weight: 100;
 }
 
-/*steps*/
+.header_mainpage {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: "Shrikhand", "cursive";
+  font-size: 1.5rem;
+}
+
+.icon_location {
+  color: #444747;
+  background-color: rgb(236, 233, 233);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  box-shadow: 5px 5px 5px 2px rgba(206, 201, 201, 0.726) inset;
+}
+.icon_location i {
+  padding-right: 2rem;
+}
+.icon_location h1 {
+  font-family: "Roboto", "sans-serif";
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 .steps {
   margin-top: 2.5em;
   font-family: "Roboto", "sans-serif";
@@ -80,11 +107,11 @@
 .choice {
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.2em;
-  height: 70px;
+  height: 60px;
   border-radius: 25px;
   position: relative;
   background: rgb(236, 233, 233);
@@ -103,13 +130,17 @@
   color: black;
 }
 
+.choice h3 {
+  font-size: 1.1rem;
+}
+
 .number {
   position: absolute;
   background-color: #9356DC;
   height: 1.9em;
   width: 1.9em;
   border-radius: 60px;
-  left: -0.5em;
+  left: -0.6em;
   text-align: center;
 }
 
@@ -117,33 +148,30 @@
   justify-self: center;
   color: white;
   position: absolute;
-  left: 0.6em;
+  left: 0.7em;
   top: 0.4em;
 }
 
-.header {
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  font: "Shrikhand";
-}
-
-.icon_location {
-  color: #444747;
-  background-color: rgb(236, 233, 233);
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  font-weight: lighter;
-  box-shadow: 5px 5px 5px 2px rgba(206, 201, 201, 0.726) inset;
-}
-.icon_location i {
-  padding-right: 2rem;
-}
-.icon_location p {
-  font-family: "Roboto", "sans-serif";
+@media screen and (min-width: 768px) {
+  .welcome {
+    display: flex;
+  }
+  .site_presentation {
+    flex-basis: 50%;
+  }
+  .steps {
+    flex-basis: 50%;
+    background-color: #f5f4f4;
+    margin-top: 0;
+    box-shadow: 1px 0px 0px 0px rgba(206, 201, 201, 0.726) inset;
+  }
+  .steps h1 {
+    text-align: center;
+    margin-left: 0;
+  }
+  .choice {
+    width: 60%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

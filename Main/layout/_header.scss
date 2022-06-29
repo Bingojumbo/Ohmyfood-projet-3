@@ -1,9 +1,10 @@
-.header
+.header_mainpage
 {
    text-align: center;
    margin-top: 3rem;
    margin-bottom: 1.5rem;
-   font: 'Shrikhand';
+   @include text-logo;
+   
 
    
 }
@@ -16,17 +17,18 @@ height: 5rem;
 display: flex;
 justify-content: center;
 align-items: center;
-font-size: 1rem;
+font-size: 1.5rem;
 font-weight: lighter;
-
 box-shadow: 5px 5px 5px 2px $colour-shadow inset;
 
    & i{      
       padding-right: 2rem;
    }
 
-   & p{
+   & h1{
       @include text-regular;
+      font-size: 1.5rem;
+      font-weight: 500;
       
    }
 

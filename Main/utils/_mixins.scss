@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
 
 /*colors*/
 
@@ -29,6 +28,7 @@
 
 @mixin text-logo {
     font-family: 'Shrikhand', 'cursive';
+    font-size: 1.5rem;
 }
 
 @mixin text-regular {
