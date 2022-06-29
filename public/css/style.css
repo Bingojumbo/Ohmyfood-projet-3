@@ -190,7 +190,8 @@
 }
 .restaurants__page--photo {
   width: 100%;
-  height: 160px;
+  height: 180px;
+  object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
 .restaurants__page--new {
