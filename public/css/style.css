@@ -34,7 +34,7 @@
 
 .site_presentation {
   font-family: "Roboto", "sans-serif";
-  background-color: #f5f4f4;
+  background-color: #f6f6f6;
   text-align: center;
   height: 25em;
   display: flex;
@@ -43,9 +43,8 @@
   align-items: center;
 }
 .site_presentation h1 {
-  margin-bottom: -0.5em;
-  word-spacing: 0.2em;
-  margin-top: -2em;
+  font-size: 1.5rem;
+  margin-top: -2.5em;
 }
 .site_presentation p {
   font-size: 1.3em;
@@ -56,29 +55,29 @@
 
 .header_mainpage {
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
   font-family: "Shrikhand", "cursive";
-  font-size: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: lighter;
 }
 
 .icon_location {
   color: #444747;
-  background-color: rgb(236, 233, 233);
-  height: 5rem;
+  background: rgb(238, 238, 238);
+  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
-  font-weight: lighter;
-  box-shadow: 5px 5px 5px 2px rgba(206, 201, 201, 0.726) inset;
+  box-shadow: 0px 2px 5px 2px rgba(206, 201, 201, 0.726) inset;
 }
 .icon_location i {
-  padding-right: 2rem;
+  padding-right: 1.5rem;
+  font-size: 1rem;
 }
 .icon_location h1 {
   font-family: "Roboto", "sans-serif";
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
@@ -87,7 +86,7 @@
   font-family: "Roboto", "sans-serif";
 }
 .steps h1 {
-  margin-bottom: 1em;
+  padding-top: 1em;
   margin-left: 0.3em;
 }
 
@@ -115,9 +114,9 @@
   height: 60px;
   border-radius: 25px;
   position: relative;
-  background: rgb(236, 233, 233);
+  background: rgb(238, 238, 238);
   box-shadow: 2px 5px 5px rgba(206, 201, 201, 0.726);
-  background-color: #f5f4f4;
+  background-color: #f6f6f6;
 }
 .choice:hover {
   background-color: #efe6fa;
@@ -162,7 +161,7 @@
   }
   .steps {
     flex-basis: 50%;
-    background-color: #f5f4f4;
+    background-color: #f6f6f6;
     margin-top: 0;
     box-shadow: 1px 0px 0px 0px rgba(206, 201, 201, 0.726) inset;
   }
@@ -175,14 +174,14 @@
   }
 }
 .restaurants {
-  background-color: #f5f4f4;
-  max-height: 50%;
+  background-color: #f6f6f6;
+  padding-bottom: 3rem;
 }
 .restaurants__page {
   position: relative;
   max-width: 90%;
   max-height: 20%;
-  border-radius: 30px;
+  border-radius: 15px;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
@@ -190,7 +189,7 @@
 }
 .restaurants__page--photo {
   width: 100%;
-  height: 180px;
+  height: 170px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
 }
@@ -212,24 +211,62 @@
 .restaurants__page--name {
   font-family: "Roboto", "sans-serif";
   color: black;
-  display: flex;
-  flex-direction: column;
-  padding-top: 0.5rem;
+  padding-top: 0.7rem;
   padding-left: 0.6rem;
+  padding-bottom: 0.3rem;
 }
 .restaurants__page--location {
   padding-top: 0.4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 .restaurants__page--heart {
   position: absolute;
-  bottom: 6%;
+  bottom: 12%;
   right: 6%;
   font-size: 1.7rem;
 }
 
 .restaurants a {
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgb(238, 238, 238);
+  }
+  .restaurants__page {
+    width: 50%;
+  }
+}
+.footer {
+  background-color: #363636;
+  font-family: "Roboto", "sans-serif";
+  color: white;
+  padding: 1.5rem 0 0.5rem 0rem;
+}
+.footer__h3 {
+  font-family: "Shrikhand", "cursive";
+  font-size: 0.8rem;
+  font-weight: lighter;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+  padding-left: 5%;
+}
+.footer__ul {
+  padding-inline-start: 5%;
+}
+.footer__li {
+  list-style-type: none;
+  margin-bottom: 0.5rem;
+}
+.footer i {
+  padding-right: 2rem;
+  width: 0.5rem;
+  height: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

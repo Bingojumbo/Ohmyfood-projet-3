@@ -1,0 +1,30 @@
+.footer{
+    @include footer-background;
+    @include text-regular;
+    color: white;
+    padding: 1.5rem 0 0.5rem 0rem;
+
+    &__h3{
+        @include text-logo;
+        font-size: 1rem;
+        font-weight: lighter;
+        margin-bottom: 1rem;
+        padding-left: 5%;
+    }
+
+    &__ul{
+        padding-inline-start: 5%;
+    }
+
+    &__li{
+        list-style-type: none;
+        margin-bottom: 0.5rem;
+    }
+
+    & i{
+        padding-right: 2rem;
+        width: 0.5rem;
+        height: 0.5rem;
+    } 
+
+}

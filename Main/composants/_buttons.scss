@@ -4,7 +4,7 @@
     @include box-shadow;
 
         &:hover{
-            background: linear-gradient(lighten($color-primary, 5%), lighten($color-secondary, 5%));
+            background: linear-gradient(lighten($colour-primary, 5%), lighten($colour-secondary, 5%));
             @include shadow-hover;
             cursor: pointer;            
         }

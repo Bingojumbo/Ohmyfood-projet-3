@@ -3,7 +3,11 @@
 /*colors*/
 
 @mixin back-colour($colour:$colour-background){
-    background-color: lighten($colour, 4%);
+    background-color: lighten($colour, 3%);
+}
+
+@mixin footer-background($colour:$colour-background){
+    background-color: darken($colour, 72%);
 }
 
 @mixin colour-icon($color:$colour-icon) {
@@ -14,7 +18,7 @@
 
 
 @mixin colour-btn(){
-    background: linear-gradient($color-secondary, $color-primary);    
+    background: linear-gradient($colour-secondary, $colour-primary);    
     border-style: none;
 }
 
@@ -30,7 +34,8 @@
 
 @mixin text-logo {
     font-family: 'Shrikhand', 'cursive';
-    font-size: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: lighter;
 }
 
 @mixin text-regular {
@@ -60,7 +65,7 @@
 /* restaurants page acceuil */
 
 @mixin border-radius-page {
-    border-radius: 30px;    
+    border-radius: 15px;    
 }
 
 @mixin border-radius-image {
