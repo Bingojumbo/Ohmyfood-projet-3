@@ -52,13 +52,32 @@
   font-weight: 100;
 }
 
-.header_mainpage {
+.header {
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 0.3rem;
   font-family: "Shrikhand", "cursive";
   font-size: 0.8rem;
   font-weight: lighter;
+}
+
+.header_restaurantpage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.header_restaurantpage__arrow {
+  margin-left: 5%;
+  font-size: 1.1rem;
+  color: #363636;
+  font-weight: bold;
+  flex-basis: 10%;
+}
+.header_restaurantpage__title {
+  width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .icon_location {

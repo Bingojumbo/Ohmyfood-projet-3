@@ -1,12 +1,41 @@
-.header_mainpage
+.header
 {
    text-align: center;
    margin-top: 1rem;
    margin-bottom: 0.3rem;
    @include text-logo;
+
    
 
    
+}
+
+.header_restaurantpage{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   
+   
+      &__arrow{
+         margin-left: 5%;
+         font-size: 1.1rem;
+         color: $colour-arrow;
+         font-weight: bold;
+         flex-basis: 10%;
+                 
+      }
+
+      &__title{
+         
+         width: 10rem;
+         margin-left: auto;
+         margin-right: auto;
+         
+         
+         
+         
+      }
 }
 
 .icon_location
