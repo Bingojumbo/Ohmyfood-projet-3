@@ -3,8 +3,14 @@
     padding-bottom: 3rem;
     
     
+        &__titre{
+            padding-top: 3rem;
+            @include text-regular;
+            font-size: 1.5rem;
+            padding-left: 5%;
+        }
 
-        &__page {
+        &__card {
             position: relative;
             max-width: 90%;
             max-height: 20%;            
@@ -82,7 +88,7 @@
         background: $colour-background;      
     
 
-        &__page{
+        &__card{
         width: 50%;
         }    
 

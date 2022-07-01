@@ -2,23 +2,23 @@
     @include text-regular;
     @include back-colour;
     text-align: center;
-    height: 25em;
+    height: 17.7em;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 
     & h1{
         
-       
+        margin-bottom: 3rem;
         font-size: 1.5rem;
-        margin-top: -2.5em;
+        margin-top: 1.7em;
     }
 
     & p{
-        font-size: 1.3em;
+        font-size: 1.2em;
         margin-top: -55px;
-        margin-bottom: -50px;
+        
         font-weight: 100;
     }
 }
