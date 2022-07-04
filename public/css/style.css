@@ -54,7 +54,6 @@
 
 .header {
   text-align: center;
-  margin-top: 1rem;
   margin-bottom: 0.3rem;
   font-family: "Shrikhand", "cursive";
   font-size: 0.8rem;
@@ -64,20 +63,22 @@
 .header_restaurantpage {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  margin-bottom: -1.2rem;
 }
 .header_restaurantpage__arrow {
   margin-left: 5%;
   font-size: 1.1rem;
   color: #363636;
   font-weight: bold;
-  flex-basis: 10%;
 }
 .header_restaurantpage__title {
-  width: 10rem;
+  font-family: "Shrikhand", "cursive";
+  font-size: 0.8rem;
+  font-weight: lighter;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  font-size: 2rem;
 }
 
 .icon_location {
@@ -170,21 +171,27 @@
 }
 
 @media screen and (min-width: 768px) {
-  .welcome {
-    display: flex;
-  }
-  .site_presentation {
-    flex-basis: 50%;
-  }
   .steps {
+    margin-bottom: 0;
     flex-basis: 50%;
     background-color: #f6f6f6;
     margin-top: 0;
     box-shadow: 1px 0px 0px 0px rgba(206, 201, 201, 0.726) inset;
+    padding-top: 2.5rem;
   }
   .steps h1 {
     text-align: center;
     margin-left: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .welcome {
+    display: flex;
+    height: 100%;
+  }
+  .site_presentation {
+    flex-basis: 50%;
+    height: 21rem;
   }
   .choice {
     width: 60%;
@@ -260,6 +267,11 @@
     text-align: center;
     background: rgb(238, 238, 238);
   }
+  .restaurants__titre {
+    padding-left: 0;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
   .restaurants__card {
     width: 50%;
   }
@@ -294,6 +306,31 @@
 .footer a {
   text-decoration: none;
   color: white;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  position: relative;
+}
+.menu__restaurantpage--photo {
+  position: absolute;
+  width: 100%;
+}
+.menu__name {
+  z-index: 1;
+  border: 1px black solid;
+  border-radius: 25px 25px 0 0;
+  margin-top: -3rem;
+  position: absolute;
+  background-color: #f6f6f6;
+  width: 100%;
+  padding: 5% 0 0 5%;
+}
+
+.photo {
+  height: 14rem;
+  width: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
