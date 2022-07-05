@@ -1,32 +1,54 @@
 .menu{
 
     @include back-colour;
-    position: relative;
+   
+    
 
-    &__restaurantpage--photo{
-        
-        position: absolute;
+    
+
+    &__header{
+
+        border-radius: 40px 40px 0 0;
+        display: flex;
+        justify-content: space-between;
         width: 100%;
+        &--name{
+            z-index: 1;    
+            border-radius: 40px 40px 0 0;
+            margin-top: -3rem;
+           
+            @include back-colour;
+            width: 100%;
+            padding: 5% 8% 0 5%;
+            @include text-logo;
+            font-size: 1.8rem;
+             }  
+
+        &--heart{
+            z-index: 1;
+            height: 50px;
+            width: 50px;
+            font-size: 2rem;
+            color: red;
+            
+        }
+    
     }
 
-    &__name{
-    z-index: 1;
-    border: 1px black solid;
-    border-radius: 25px 25px 0 0;
-    margin-top: -3rem;
-    position: absolute;
-    @include back-colour;
-    width: 100%;
-    padding: 5% 0 0 5%;
 }
 
+.restaurantpage_photo{
+        
+        
+    width: 100%;
 }
 
 .photo{
-    height: 14rem;
+    height: 17rem;
     width: 100%;
     object-fit: cover;
-    
- 
- 
+ }
+
+ .course{
+   margin-top: 5%;
  }

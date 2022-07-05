@@ -310,27 +310,45 @@
 
 .menu {
   background-color: #f6f6f6;
-  position: relative;
 }
-.menu__restaurantpage--photo {
-  position: absolute;
+.menu__header {
+  border-radius: 40px 40px 0 0;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
 }
-.menu__name {
+.menu__header--name {
   z-index: 1;
-  border: 1px black solid;
-  border-radius: 25px 25px 0 0;
+  border-radius: 40px 40px 0 0;
   margin-top: -3rem;
-  position: absolute;
   background-color: #f6f6f6;
   width: 100%;
-  padding: 5% 0 0 5%;
+  padding: 5% 8% 0 5%;
+  font-family: "Shrikhand", "cursive";
+  font-size: 0.8rem;
+  font-weight: lighter;
+  font-size: 1.8rem;
+}
+.menu__header--heart {
+  z-index: 1;
+  height: 50px;
+  width: 50px;
+  font-size: 2rem;
+  color: red;
+}
+
+.restaurantpage_photo {
+  width: 100%;
 }
 
 .photo {
-  height: 14rem;
+  height: 17rem;
   width: 100%;
   object-fit: cover;
+}
+
+.course {
+  margin-top: 5%;
 }
 
 /*# sourceMappingURL=style.css.map */
