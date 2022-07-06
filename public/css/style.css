@@ -4,6 +4,7 @@
 /*text font*/
 /*button*/
 /* restaurants page acceuil */
+/* coures underline */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
@@ -321,20 +322,21 @@
   z-index: 1;
   border-radius: 40px 40px 0 0;
   margin-top: -3rem;
+  position: relative;
   background-color: #f6f6f6;
   width: 100%;
-  padding: 5% 8% 0 5%;
+  padding: 9% 0 0 5%;
   font-family: "Shrikhand", "cursive";
   font-size: 0.8rem;
   font-weight: lighter;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .menu__header--heart {
+  position: absolute;
+  font-size: 1.5rem;
+  right: 12%;
+  top: 49%;
   z-index: 1;
-  height: 50px;
-  width: 50px;
-  font-size: 2rem;
-  color: red;
 }
 
 .restaurantpage_photo {
@@ -348,7 +350,28 @@
 }
 
 .course {
-  margin-top: 5%;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+.course__title {
+  font-family: "Roboto", "sans-serif";
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.course__title--underline {
+  border-bottom: 3px solid #99E2D0;
+  width: 10%;
+  height: 5px;
+  display: block;
+  padding-top: 1%;
+}
+.course__dish {
+  box-shadow: 2px 5px 5px rgba(206, 201, 201, 0.726);
+  border-radius: 15px;
+  height: 60px;
+  margin: 2% 5% 3% 0;
+  background-color: white;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,6 @@
 .menu{
 
-    @include back-colour;
-   
-    
-
-    
+    @include back-colour;   
 
     &__header{
 
@@ -12,24 +8,25 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        
         &--name{
             z-index: 1;    
             border-radius: 40px 40px 0 0;
             margin-top: -3rem;
-           
+            position: relative;
             @include back-colour;
             width: 100%;
-            padding: 5% 8% 0 5%;
+            padding: 9% 0 0 5%;
             @include text-logo;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
              }  
 
         &--heart{
+            position: absolute;            
+            font-size: 1.5rem;
+            right: 12%;
+            top: 49%;
             z-index: 1;
-            height: 50px;
-            width: 50px;
-            font-size: 2rem;
-            color: red;
             
         }
     
@@ -50,5 +47,26 @@
  }
 
  .course{
-   margin-top: 5%;
- }
+   margin-top: 10%;
+   margin-left: 5%;
+
+    &__title{
+   @include text-regular;
+   font-size: 1rem;
+   text-transform: uppercase;
+
+        &--underline{
+            @include courses-underline;
+        }
+   
+    }
+
+    &__dish{
+        @include box-shadow;
+        @include border-radius-page;
+        height: 60px;
+        margin: 2% 5% 3% 0;
+        background-color: white;
+        position: relative;
+    }
+}
