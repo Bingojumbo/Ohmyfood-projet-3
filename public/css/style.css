@@ -31,6 +31,11 @@
 .btn__btn-explorer {
   margin-bottom: 3.4rem;
 }
+.btn__btn--commander {
+  width: 190px;
+  margin-top: 2.2rem;
+  margin-bottom: 3.5rem;
+}
 
 .site_presentation {
   font-family: "Roboto", "sans-serif";
@@ -42,7 +47,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.site_presentation h1 {
+.site_presentation h2 {
   margin-bottom: 3rem;
   font-size: 1.5rem;
   margin-top: 1.7em;
@@ -106,7 +111,7 @@
   margin-bottom: 5rem;
   font-family: "Roboto", "sans-serif";
 }
-.steps h1 {
+.steps h2 {
   margin-left: 5%;
   font-size: 1.5rem;
 }
@@ -207,6 +212,7 @@
   font-family: "Roboto", "sans-serif";
   font-size: 1.5rem;
   padding-left: 5%;
+  padding-bottom: 1.2rem;
 }
 .restaurants__card {
   position: relative;
@@ -319,6 +325,7 @@
   width: 100%;
 }
 .menu__header--name {
+  display: block;
   z-index: 1;
   border-radius: 40px 40px 0 0;
   margin-top: -3rem;
@@ -329,13 +336,14 @@
   font-family: "Shrikhand", "cursive";
   font-size: 0.8rem;
   font-weight: lighter;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 .menu__header--heart {
+  display: block;
   position: absolute;
   font-size: 1.5rem;
-  right: 12%;
-  top: 49%;
+  right: 11%;
+  top: 58%;
   z-index: 1;
 }
 
@@ -368,10 +376,32 @@
 .course__dish {
   box-shadow: 2px 5px 5px rgba(206, 201, 201, 0.726);
   border-radius: 15px;
-  height: 60px;
+  font-family: "Roboto", "sans-serif";
+  height: 65px;
   margin: 2% 5% 3% 0;
   background-color: white;
   position: relative;
+}
+.course__dish--name {
+  padding: 3% 0 2% 3%;
+  flex-basis: 100%;
+}
+.course__dish--description {
+  padding-left: 3%;
+  font-size: 0.9rem;
+  text-overflow: ellipsis;
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.course__dish--price {
+  position: absolute;
+  right: 5%;
+  bottom: 18%;
+}
+
+.commander {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
