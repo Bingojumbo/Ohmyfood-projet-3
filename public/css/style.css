@@ -382,6 +382,14 @@
   background-color: white;
   position: relative;
 }
+.course__dish--animation {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  display: block;
+  background-color: #99E2D0;
+  width: 10px;
+}
 .course__dish--name {
   padding: 4% 0 2% 3%;
   flex-basis: 100%;
