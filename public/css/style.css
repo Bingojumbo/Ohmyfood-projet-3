@@ -377,14 +377,15 @@
   box-shadow: 2px 5px 5px rgba(206, 201, 201, 0.726);
   border-radius: 15px;
   font-family: "Roboto", "sans-serif";
-  height: 65px;
+  height: 40%;
   margin: 2% 5% 3% 0;
   background-color: white;
   position: relative;
 }
 .course__dish--name {
-  padding: 3% 0 2% 3%;
+  padding: 4% 0 2% 3%;
   flex-basis: 100%;
+  font-weight: 600;
 }
 .course__dish--description {
   padding-left: 3%;
@@ -393,6 +394,7 @@
   width: 80%;
   white-space: nowrap;
   overflow: hidden;
+  padding-bottom: 3%;
 }
 .course__dish--price {
   position: absolute;
