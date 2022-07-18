@@ -66,39 +66,66 @@
                 margin-bottom: 0.8rem;
             }
 
+
+
+            
+
             &--heart{
                 display: block;
                 position: absolute;
                 bottom: 12%;
                 right: 6%;
-                font-size: 1.7rem;
+                height: 1.7rem;
+                width: 1.5rem;
                 
+
+                &:hover{
+                    .fullheart{                        
+                        opacity: 1;
+                        transition: all 200ms;
+                        cursor: pointer;
+                                               
+                    }
+
+                    .emptyheart{
+                        color: white;
+                        transition-duration: 200ms;
+                        
+                    }
+                }
+
+                    & i{
+                        position: absolute;
+                        font-size: 1.7rem;                        
+                        left: 1%;
+                    }
                 
             }
+            
 
             
         }
     }
 
-    
+   
 
 .restaurants a{
     text-decoration: none;
 }
 
-.fa-heart{
-        position: absolute;
-        bottom: 12%;
-        right: 6%;
-        font-size: 1.7rem;
-        color: black;
+.fullheart{
+    opacity: 0;
+    @include colour-btn;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 
-        &:hover{
-            color: $colour-primary;
-            background-color: $colour-primary;
-        }
-        
+
 }
+
+
+        
+
 
 
 
@@ -127,5 +154,4 @@
         }    
 
     }
-
 }

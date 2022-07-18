@@ -4,10 +4,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @keyframes heart_fill {
   from {
-    background-color: #444747;
+    background-color: #99E2D0;
+    transform: scaleX(0);
+    transform-origin: right;
   }
   to {
-    background-color: #444747;
+    background-color: #99E2D0;
+    transform: scaleX(1);
+    width: 5rem;
+    opacity: 1;
   }
 }
 /*colors*/
@@ -272,23 +277,35 @@
   position: absolute;
   bottom: 12%;
   right: 6%;
+  height: 1.7rem;
+  width: 1.5rem;
+}
+.restaurants__card--heart:hover .fullheart {
+  opacity: 1;
+  transition: all 200ms;
+  cursor: pointer;
+}
+.restaurants__card--heart:hover .emptyheart {
+  color: white;
+  transition-duration: 200ms;
+}
+.restaurants__card--heart i {
+  position: absolute;
   font-size: 1.7rem;
+  left: 1%;
 }
 
 .restaurants a {
   text-decoration: none;
 }
 
-.fa-heart {
-  position: absolute;
-  bottom: 12%;
-  right: 6%;
-  font-size: 1.7rem;
-  color: black;
-}
-.fa-heart:hover {
-  color: #9356DC;
-  background-color: #9356DC;
+.fullheart {
+  opacity: 0;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-style: none;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 @media screen and (min-width: 768px) {
@@ -406,19 +423,13 @@
   background-color: white;
   position: relative;
 }
-.course__dish--animation {
-  position: absolute;
-  right: 0;
-  height: 100%;
-  display: block;
-  background-color: #99E2D0;
-  width: 10px;
-  transform: scale(1);
-  transition: transform 400ms;
-  transform-origin: right;
+.course__dish--section {
+  display: flex;
+  flex-direction: column;
+  transition: margin-right 1s;
 }
-.course__dish--animation:hover {
-  transform: scaleX(10);
+.course__dish--section:hover + .course__dish--section--animation {
+  opacity: 1;
 }
 .course__dish--name {
   padding: 4% 0 2% 3%;

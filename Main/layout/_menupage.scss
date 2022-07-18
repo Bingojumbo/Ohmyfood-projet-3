@@ -74,25 +74,27 @@
         margin: 2% 5% 3% 0;
         background-color: white;
         position: relative;
-       
         
 
-        &--animation{
-            position: absolute;
-            right: 0;
-            height: 100%;
-            display: block;
-            background-color: $colour-tertiary;
-            width: 10px;
-            transform: scale(1);
-            transition: transform 400ms;
-            transform-origin: right;
+        
 
-            &:hover{ 
-                transform: scaleX(10);
+        
+        &--section{
+            display: flex;
+            flex-direction: column;
+            transition: margin-right 1s;
+
+            &:hover + &--animation{
+               opacity: 1;
             }
-            
         }
+        
+
+        
+            
+        
+
+        
         
         
 

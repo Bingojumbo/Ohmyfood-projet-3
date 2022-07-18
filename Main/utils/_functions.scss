@@ -1,9 +1,14 @@
 @keyframes heart_fill{
     from {
-background-color: $colour-icon;
+background-color: $colour-tertiary;
+transform: scaleX(0);
+transform-origin: right;
     }
 
     to {
-background-color: $colour-icon;
+background-color: $colour-tertiary;
+transform: scaleX(1);
+width: 5rem;
+opacity: 1;
     }
 }
