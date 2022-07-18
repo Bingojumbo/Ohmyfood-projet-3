@@ -1,12 +1,20 @@
 /* colors */
 /* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@keyframes heart_fill {
+  from {
+    background-color: #444747;
+  }
+  to {
+    background-color: #444747;
+  }
+}
 /*colors*/
 /*text font*/
 /*button*/
 /* restaurants page acceuil */
 /* coures underline */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -231,9 +239,12 @@
   border-radius: 15px 15px 0 0;
 }
 .restaurants__card--new {
+  display: flex;
   background-color: #99E2D0;
   color: #278870;
   font-family: "Roboto", "sans-serif";
+  justify-content: center;
+  align-items: center;
   font-weight: bolder;
   border: none;
   font-size: 0.8rem;
@@ -257,6 +268,7 @@
   margin-bottom: 0.8rem;
 }
 .restaurants__card--heart {
+  display: block;
   position: absolute;
   bottom: 12%;
   right: 6%;
@@ -265,6 +277,18 @@
 
 .restaurants a {
   text-decoration: none;
+}
+
+.fa-heart {
+  position: absolute;
+  bottom: 12%;
+  right: 6%;
+  font-size: 1.7rem;
+  color: black;
+}
+.fa-heart:hover {
+  color: #9356DC;
+  background-color: #9356DC;
 }
 
 @media screen and (min-width: 768px) {
@@ -389,6 +413,12 @@
   display: block;
   background-color: #99E2D0;
   width: 10px;
+  transform: scale(1);
+  transition: transform 400ms;
+  transform-origin: right;
+}
+.course__dish--animation:hover {
+  transform: scaleX(10);
 }
 .course__dish--name {
   padding: 4% 0 2% 3%;
