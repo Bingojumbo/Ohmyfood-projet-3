@@ -78,18 +78,23 @@
                 height: 1.7rem;
                 width: 1.5rem;
                 
+                
 
                 &:hover{
                     .fullheart{                        
                         opacity: 1;
-                        transition: all 200ms;
+                        
+                        transition: all 500ms;
                         cursor: pointer;
+                        
+                       
                                                
                     }
 
                     .emptyheart{
                         color: white;
-                        transition-duration: 200ms;
+                        transition-duration: 500ms;
+                        
                         
                     }
                 }
@@ -98,6 +103,7 @@
                         position: absolute;
                         font-size: 1.7rem;                        
                         left: 1%;
+                        
                     }
                 
             }

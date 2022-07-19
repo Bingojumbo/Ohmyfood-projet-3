@@ -17,11 +17,12 @@
 
 
 
+
+
 @mixin colour-btn(){
     background: linear-gradient($colour-secondary, $colour-primary);    
     border-style: none;
 }
-
 
 
 @mixin shadow-hover($colour:$colour-shadow){
@@ -72,7 +73,7 @@
     border-radius: 15px 15px 0 0;
 }
 
-/* coures underline */
+/* courses underline */
 
 @mixin courses-underline {
     border-bottom: 3px solid $colour-tertiary;
@@ -81,6 +82,10 @@
     display: block;
     padding-top: 1%;
 }
+
+/* loader */
+
+
 
 
 

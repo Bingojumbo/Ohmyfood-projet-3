@@ -1,14 +1,84 @@
-@keyframes heart_fill{
-    from {
-background-color: $colour-tertiary;
-transform: scaleX(0);
-transform-origin: right;
+@keyframes loader_page{
+    0% {
+
+        opacity: 0;
+        transform: scale(0);
     }
 
-    to {
-background-color: $colour-tertiary;
-transform: scaleX(1);
-width: 5rem;
-opacity: 1;
+    10%{
+        opacity: 0.1;
+        color: $colour-primary;
+        transform: scale(0.1);
+    }
+
+    20%{
+        opacity: 0.2;
+        color: $colour-primary;
+        transform: scale(0.2);
+    }
+
+    30%{
+        opacity: 0.30;
+        color: $colour-primary;
+        transform: scale(0.30);
+    }
+
+    40%{
+        opacity: 0.40;
+        color: $colour-primary;
+        transform: scale(0.40);
+    }
+
+
+    50%{
+        opacity: .5;
+        color: $colour-primary;
+        transform: scale(.5);
+    }
+
+    60%{
+
+        opacity: 0.60;
+        color: $colour-primary;
+        transform: scale(0.6);
+    }
+
+    70%{
+        opacity: .7;
+        color: $colour-primary;
+        transform: scale(.7);
+    }
+
+    80%{
+        opacity: 0.8;
+        color: $colour-primary;
+        transform: scale(0.8);
+    }
+
+    90%{
+        opacity: 0.9;
+        color: $colour-primary;
+        transform: scale(0.9);
+    }
+
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes delay_page{
+    0% {
+        opacity: 0;
+    }
+
+    
+
+    50%,99%{
+        opacity: 0.1;
+    }
+
+    100%{
+        opacity: 1;
     }
 }

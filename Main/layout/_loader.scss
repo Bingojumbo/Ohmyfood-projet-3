@@ -1,0 +1,48 @@
+.loader i{
+font-size: 12rem;
+position: absolute;
+z-index: 1;
+bottom: 50%;
+top: 50%;
+text-align: center;
+color: $colour-secondary;
+}
+
+.loader{
+    display: flex;    
+           
+    justify-content: center;
+    align-items: center;
+
+    &__smile{
+        
+        opacity: 0;
+        animation: loader_page $loader_duration cubic-bezier(.17,.57,.24,.8);
+    }
+
+    &__cheese{
+        
+        opacity: 0;
+        animation: loader_page $loader_duration cubic-bezier(.17,.57,.24,.8);
+        animation-delay: 850ms;
+    }
+
+    &__champagne{
+        
+        opacity: 0;
+        animation: loader_page $loader_duration cubic-bezier(.17,.57,.24,.8);
+        animation-delay: 1700ms;
+    }
+}
+
+main{
+    animation: delay_page 2850ms;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .loader{
+        justify-content: center;
+        align-items: center;
+    }
+}
