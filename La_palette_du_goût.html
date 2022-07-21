@@ -12,7 +12,7 @@
 
     <title>OhMyFood-La palette du goût</title>
 </head>
-<body>
+<body class="menupages__body">
      <!--HEADER-->
      <header class="header">
         <div class="header_restaurantpage">
@@ -31,7 +31,10 @@
     <section class="menu">
 
             <div class="menu__header">
-                     <h2 class="menu__header--name">La palette du goût<span class="menu__header--heart"><i class="far fa-heart fa"></i></span></h2>
+                     <h2 class="menu__header--name">La palette du goût<span class="restaurants__card--heart">
+                        <i class="fa-regular fa-heart emptyheart">
+                        <i class="fa-solid fa-heart fullheart"></i></i>
+                        </span></h2>
                 
                      
                 
@@ -41,30 +44,43 @@
                     <p class="course__title">entrées</p>
                     <span class="course__title--underline"></span>
                     
-                <div class="course__dish">
+                <div class="course__dish course__loader course__loader--one">
                     <div class="course__dish--section">
                         <h3 class="course__dish--name">Fricassé d'escargot</h3>
                         <div class="course__dish--description">Au piment d'espelette</div>
-                        <div class="course__dish--price"><strong>25€</strong></div>
                     </div>
+                        <span class="course__dish--price"><strong>25€</strong></span>                   
+                
                         <div class="course__dish--animation">
-                            <i class="fa-solid fa-circle-check"></i>
+                            <span class="course__dish--check"><i class="fa-solid fa-circle-check "></i></span>
                         </div>
+                                   
+                </div>
+
+                <div class="course__dish course__loader course__loader--two">
+                    <div class="course__dish--section">
+                        <h3 class="course__dish--name">Foie grad de canard mi-cuit</h3>
+                        <span class="course__dish--description">Et ses copeaux de truffe noire</span>
+                    </div>    
+                        <span class="course__dish--price"><strong>35€</strong></span>
                     
+                    <div class="course__dish--animation">
+                        <span class="course__dish--check"><i class="fa-solid fa-circle-check "></i></span>
+                    </div>    
                 </div>
 
-                <div class="course__dish">
-                    <h3 class="course__dish--name">Foie grad de canard mi-cuit</h3>
-                    <div class="course__dish--description">Et ses copeaux de truffe noire</div>
-                    <div class="course__dish--price"><strong>35€</strong></div>
+                <div class="course__dish course__loader course__loader--three">
+                    <div class="course__dish--section">
+                        <h3 class="course__dish--name">Oeuf au plat</h3>
+                        <span class="course__dish--description">Assaisonné à la truffe sur lit de caviar</span>
+                    </div>
+                        <span class="course__dish--price"><strong>20€</strong></span>
+                    
+                    <div class="course__dish--animation">
+                        <span class="course__dish--check"><i class="fa-solid fa-circle-check "></i></span>
+                    </div>
                 </div>
-
-                <div class="course__dish">
-                    <h3 class="course__dish--name">Oeuf au plat</h3>
-                    <div class="course__dish--description">Assaisonné à la truffe sur lit de caviar</div>
-                    <div class="course__dish--price"><strong>20€</strong></div>
-                </div>
-            </div>
+                
 
             <div class="course">
                 <p class="course__title">plats</p>

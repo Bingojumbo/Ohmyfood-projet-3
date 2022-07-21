@@ -70,32 +70,41 @@
         @include box-shadow;
         @include border-radius-page;
         @include text-regular;
-        height: 40%;
+        height: 50%;
         margin: 2% 5% 3% 0;
         background-color: white;
         position: relative;
+        display: flex;
+        justify-content: space-between;
+        
+        
+
+        &:hover > .course__dish--animation{
+            width: 4rem;
+            visibility: visible;
+            animation: hover_slide 1s ease-out;
+        }    
+
+        &:hover > .course__dish--check{
+               animation: check_rotate 2s;
+        }           
+
+        
+
         
 
         
 
+        
         
         &--section{
             display: flex;
             flex-direction: column;
             transition: margin-right 1s;
+            flex-basis: 80%;
 
-            
         }
-        
-
-        
-            
-        
-
-        
-        
-        
-
+       
         &--name{
             padding: 4% 0 2% 3%;
             flex-basis: 100%;
@@ -113,16 +122,53 @@
         }
 
         &--price{
-            position: absolute;
-            right: 5%;
-            bottom: 18%;
+            
+            padding-bottom: 3%;
+           
+            display: flex;
+            align-items: flex-end;
         }
+
+        &--animation{
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $colour-tertiary;
+            color: white;
+            font-size: 1.3rem;
+            border-radius: 0 15px 15px 0;
+            visibility: hidden;
+
+        }
+
+        &--check{
+            transition: transform 2s ease-in-out;
+        }
+
+        
     }
-
-
 }
 
-.commander{
-    
+.commander{    
     text-align: center;
+}
+
+@media all and (min-width: 768px){
+    .menupages__body{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 70%;
+        @include side-colour;
+    }
+
+    .header{
+        background-color: white;
+    }
+
+    .restaurants__card--heart{
+        bottom: 1%;
+    }
+
+    
 }

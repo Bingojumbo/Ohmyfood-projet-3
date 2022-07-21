@@ -144,20 +144,29 @@
 
     .restaurants{
         display: flex;
-        flex-direction: column;  
+        flex-direction: row;  
         text-align: center;
         background: $colour-background;  
+        flex-wrap: wrap;
         
         &__titre{
             padding-left: 0;
             font-size: 2rem;
             padding-bottom: 1rem;
+            flex-basis: 100%;
         }
     
 
         &__card{
-        width: 50%;
-        }    
+        width: 47%;
+        transition: transform 1s;
+
+            &:hover{
+                
+            }
+        }  
+        
+        
 
     }
 }

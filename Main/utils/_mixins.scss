@@ -14,8 +14,10 @@
     color: lighten($color, 20%);
 }
 
-
-
+@mixin side-colour{
+    background: $colour-side;
+   
+}
 
 
 
@@ -85,7 +87,19 @@
 
 /* loader */
 
+@mixin index-loader-animation {
+    opacity: 0;
+    animation: loader_page $loader_duration cubic-bezier(.17,.57,.24,.8);
+}
 
+@mixin course_animation{
+    opacity: 0;
+    animation-duration: 2s;
+}
+
+@mixin rotate_check {
+    animation: check_rotate 5s;
+}
 
 
 

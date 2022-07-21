@@ -82,3 +82,42 @@
         opacity: 1;
     }
 }
+
+@keyframes loader_one{
+    0% {
+        opacity: 0;
+    }
+
+    
+
+    99%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        transform: scaleY(0.9);
+    }
+}
+
+@keyframes check_rotate {
+    from{
+        transform: rotate(90deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes hover_slide{
+    from{
+        width: 0rem;
+        visibility: visible;
+    }
+
+    to{
+        width: 4rem;
+        visibility: visible;
+    }
+}
