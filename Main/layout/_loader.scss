@@ -48,25 +48,30 @@ main{
     
 
     &--one{
-        animation: loader_one 2500ms;
-        transform-origin: 50% 0%;
-        transform: scaleY(1);
-        transition: transform 2800ms;
+        animation: loader_one 1500ms;
+        animation-fill-mode: backwards;
+        animation-delay: 0.4s;
         
     }
     
 
     &--two{
-        animation: loader_one 2600ms;
-        transform-origin: 50% 0%;
-        transform: scaleY(1);
-        transition: transform 2900ms;
+        animation: loader_one 1500ms;
+        animation-fill-mode: backwards;
+        animation-delay: 0.8s;
+        
     }
 
     &--three{
-        animation: loader_one 2700ms;
-        transform-origin: 50% 0%;
-        transform: scaleY(1);
-        transition: transform 3s;
+        animation: loader_one 1500ms;
+        animation-fill-mode: backwards;
+        animation-delay: 1.2s;
+        
+    }
+
+    &--four{
+        animation: loader_one 1500ms;
+        animation-fill-mode: backwards;
+        animation-delay: 1.6s;
     }
 }

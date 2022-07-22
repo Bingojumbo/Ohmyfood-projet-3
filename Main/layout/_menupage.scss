@@ -10,6 +10,7 @@
         width: 100%;
         
         &--name{
+
             display: block;
             z-index: 1;    
             border-radius: 40px 40px 0 0;
@@ -23,6 +24,7 @@
              }  
 
         &--heart{
+
             display: block;
             position: absolute;            
             font-size: 1.5rem;
@@ -36,101 +38,104 @@
 
 }
 
-.restaurantpage_photo{
-        
+.restaurantpage_photo{        
         
     width: 100%;
+
 }
 
 .photo{
+
     height: 17rem;
     width: 100%;
     object-fit: cover;
+
  }
 
  .course{
+
    margin-top: 10%;
    margin-left: 5%;
    
 
     &__title{
+
    @include text-regular;
    font-size: 1rem;
    text-transform: uppercase;
 
         &--underline{
+
             @include courses-underline;
-            
+            margin-bottom: 2%
             
         }
    
     }
 
     &__dish{
+
         @include box-shadow;
         @include border-radius-page;
         @include text-regular;
-        height: 50%;
-        margin: 2% 5% 3% 0;
+        height: 40%;
+        margin: 0% 4% 3% 0;
         background-color: white;
-        position: relative;
+        font-size: 0.9rem;
         display: flex;
         justify-content: space-between;
+       
         
         
 
-        &:hover > .course__dish--animation{
+        &:hover > &--animation{
             width: 4rem;
             visibility: visible;
             animation: hover_slide 1s ease-out;
-        }    
 
-        &:hover > .course__dish--check{
-               animation: check_rotate 2s;
-        }           
+                        .course__dish--check{
+                            animation: check_rotate 1000ms;
+                         } 
+                  }   
 
-        
-
-        
-
-        
-
-        
-        
         &--section{
-            display: flex;
-            flex-direction: column;
-            transition: margin-right 1s;
-            flex-basis: 80%;
 
+            display: flex;
+            flex-direction: column;            
+            flex-basis: 80%;
         }
        
         &--name{
-            padding: 4% 0 2% 3%;
+
+            padding: 4% 0 1% 3%;
             flex-basis: 100%;
             font-weight: 600;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
 
         &--description{
-            padding-left: 3%;
-            font-size: 0.9rem;
+
+            padding-left: 3%;            
             text-overflow: ellipsis;
             width: 80%; 
             white-space: nowrap;
             overflow: hidden;  
-            padding-bottom: 3%;       
+            padding-bottom: 6%;  
+
         }
 
-        &--price{
-            
-            padding-bottom: 3%;
-           
+        &--price{   
+
+            padding: 1% 1% 3% 1%;           
             display: flex;
             align-items: flex-end;
+
         }
 
         &--animation{
-            border: 1px solid black;
+            
             display: flex;
             justify-content: center;
             align-items: center;
@@ -138,15 +143,8 @@
             color: white;
             font-size: 1.3rem;
             border-radius: 0 15px 15px 0;
-            visibility: hidden;
-
+            visibility: hidden; 
         }
-
-        &--check{
-            transition: transform 2s ease-in-out;
-        }
-
-        
     }
 }
 
@@ -155,20 +153,31 @@
 }
 
 @media all and (min-width: 768px){
+
     .menupages__body{
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 70%;
+        
+        
         @include side-colour;
+
     }
 
     .header{
+
         background-color: white;
+
     }
 
     .restaurants__card--heart{
-        bottom: 1%;
-    }
 
-    
+        bottom: 1%;
+
+    }    
+
+    .allcourses{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 70%;
+        margin-bottom: 10rem;
+    }
 }
