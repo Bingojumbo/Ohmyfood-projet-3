@@ -83,7 +83,7 @@
     }
 }
 
-@keyframes loader_one{
+@keyframes loader_dish{
     0% {
         opacity: 0;
         transform: translateY(-30px)
@@ -114,13 +114,25 @@
     from{
         
         visibility: visible;
-        width: 0;
+       width: 0;
     }
 
     to{
-        width: 4rem;
+        width: 60px;       
+        visibility: visible;
+        overflow: hidden;
+}
+}
+@keyframes hover_slide_desktop{
+    from{
         
         visibility: visible;
-        
+       width: 0;
+    }
+
+    to{
+        width: 180px;       
+        visibility: visible;
+        overflow: hidden;
 }
 }

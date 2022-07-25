@@ -1,6 +1,6 @@
 .index--loader i{
 font-size: 12rem;
-position: absolute;
+position: fixed;
 z-index: 1;
 bottom: 50%;
 top: 50%;
@@ -10,7 +10,7 @@ color: $colour-secondary;
 
 .index--loader{
     display: flex;    
-           
+     margin: 0;      
     justify-content: center;
     align-items: center;
 
@@ -48,7 +48,7 @@ main{
     
 
     &--one{
-        animation: loader_one 1500ms;
+        animation: loader_dish 1500ms;
         animation-fill-mode: backwards;
         animation-delay: 0.4s;
         
@@ -56,21 +56,21 @@ main{
     
 
     &--two{
-        animation: loader_one 1500ms;
+        animation: loader_dish 1500ms;
         animation-fill-mode: backwards;
         animation-delay: 0.8s;
         
     }
 
     &--three{
-        animation: loader_one 1500ms;
+        animation: loader_dish 1500ms;
         animation-fill-mode: backwards;
         animation-delay: 1.2s;
         
     }
 
     &--four{
-        animation: loader_one 1500ms;
+        animation: loader_dish 1500ms;
         animation-fill-mode: backwards;
         animation-delay: 1.6s;
     }

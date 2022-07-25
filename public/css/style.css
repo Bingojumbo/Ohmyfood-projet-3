@@ -67,7 +67,7 @@
     opacity: 1;
   }
 }
-@keyframes loader_one {
+@keyframes loader_dish {
   0% {
     opacity: 0;
     transform: translateY(-30px);
@@ -91,8 +91,20 @@
     width: 0;
   }
   to {
-    width: 4rem;
+    width: 60px;
     visibility: visible;
+    overflow: hidden;
+  }
+}
+@keyframes hover_slide_desktop {
+  from {
+    visibility: visible;
+    width: 0;
+  }
+  to {
+    width: 180px;
+    visibility: visible;
+    overflow: hidden;
   }
 }
 /*colors*/
@@ -513,10 +525,14 @@
   display: flex;
   justify-content: space-between;
 }
+.course__dish:hover {
+  cursor: pointer;
+}
 .course__dish:hover > .course__dish--animation {
-  width: 4rem;
+  width: 60px;
   visibility: visible;
   animation: hover_slide 1s ease-out;
+  overflow: hidden;
 }
 .course__dish:hover > .course__dish--animation .course__dish--check {
   animation: check_rotate 1000ms;
@@ -562,27 +578,40 @@
   text-align: center;
 }
 
-@media all and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+    max-width: 1440px;
+  }
   .menupages__body {
-    background: linear-gradient(#FF79DA, #9356DC);
+    margin-left: auto;
+    margin-right: auto;
   }
   .header {
     background-color: white;
   }
+  .menu__header--name {
+    padding-top: 4%;
+  }
   .restaurants__card--heart {
     bottom: 1%;
   }
-  .allcourses {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 70%;
-    margin-bottom: 10rem;
+  .course__dish:hover > .course__dish--animation {
+    width: 180px;
+    visibility: visible;
+    animation: hover_slide_desktop 1500ms ease-out;
+    overflow: hidden;
+  }
+  .course__dish:hover > .course__dish--animation .course__dish--check {
+    animation: check_rotate 1000ms;
+  }
+  .commander {
+    margin-top: 10%;
   }
 }
 .index--loader i {
   font-size: 12rem;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   bottom: 50%;
   top: 50%;
@@ -592,6 +621,7 @@
 
 .index--loader {
   display: flex;
+  margin: 0;
   justify-content: center;
   align-items: center;
 }
@@ -621,22 +651,22 @@ main {
   }
 }
 .course__loader--one {
-  animation: loader_one 1500ms;
+  animation: loader_dish 1500ms;
   animation-fill-mode: backwards;
   animation-delay: 0.4s;
 }
 .course__loader--two {
-  animation: loader_one 1500ms;
+  animation: loader_dish 1500ms;
   animation-fill-mode: backwards;
   animation-delay: 0.8s;
 }
 .course__loader--three {
-  animation: loader_one 1500ms;
+  animation: loader_dish 1500ms;
   animation-fill-mode: backwards;
   animation-delay: 1.2s;
 }
 .course__loader--four {
-  animation: loader_one 1500ms;
+  animation: loader_dish 1500ms;
   animation-fill-mode: backwards;
   animation-delay: 1.6s;
 }

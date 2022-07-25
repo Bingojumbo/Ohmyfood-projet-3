@@ -84,14 +84,20 @@
         font-size: 0.9rem;
         display: flex;
         justify-content: space-between;
+
+        &:hover{
+            cursor: pointer;
+        }
        
         
         
 
         &:hover > &--animation{
-            width: 4rem;
+            width: 60px;
             visibility: visible;
             animation: hover_slide 1s ease-out;
+            overflow: hidden;
+            
 
                         .course__dish--check{
                             animation: check_rotate 1000ms;
@@ -152,14 +158,18 @@
     text-align: center;
 }
 
-@media all and (min-width: 768px){
-
-    .menupages__body{
+@media screen and (min-width: 768px){
+    body{
+        height: 100vh;
+        max-width: 1440px;
         
         
-        @include side-colour;
-
     }
+    .menupages__body{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 
     .header{
 
@@ -167,17 +177,36 @@
 
     }
 
+    .menu__header--name{
+        padding-top: 4%;
+    }
+
     .restaurants__card--heart{
 
         bottom: 1%;
 
-    }    
+    }  
 
-    .allcourses{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        max-width: 70%;
-        margin-bottom: 10rem;
+    .course__dish{
+        &:hover > &--animation{
+            width: 180px;
+            visibility: visible;
+            animation: hover_slide_desktop 1500ms ease-out;
+            overflow: hidden;
+            
+
+                        .course__dish--check{
+                            animation: check_rotate 1000ms;
+                         } 
+                  }   
+    }
+    
+    
+
+   
+    
+
+    .commander{
+        margin-top: 10%;
     }
 }

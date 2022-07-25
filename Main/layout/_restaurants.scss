@@ -82,10 +82,10 @@
 
                 &:hover{
                     .fullheart{                        
-                        opacity: 1;
-                        
+                        opacity: 1;                        
                         transition: all 500ms;
                         cursor: pointer;
+                        
                         
                        
                                                
@@ -93,8 +93,7 @@
 
                     .emptyheart{
                         color: white;
-                        transition-duration: 500ms;
-                        
+                        transition-duration: 500ms;                        
                         
                     }
                 }
