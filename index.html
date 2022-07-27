@@ -12,7 +12,8 @@
 
     <title>OhMyFood</title>
 </head>
-<body>
+<body class="body">
+
     <!--loader-->
 
     <div class="index--loader">
@@ -20,129 +21,143 @@
         <i class="fa-solid fa-cheese index--loader__cheese"></i>
         <i class="fa-solid fa-champagne-glasses index--loader__champagne"></i>
     </div>
+
+
 <main>
+
     <!--HEADER-->
+
     <header class="header header_mainpage">
         <h1>ohmyfood</h1>        
     </header>
 
     
 
-        <form class="icon_location" action="#" method="post">
-            <i class="fa-solid fa-location-dot"></i>
-            <h1>Paris, Belleville</h1>
-        </form>
+    <form class="icon_location" action="#" method="post">
+        <i class="fa-solid fa-location-dot"></i>
+        <h1>Paris, Belleville</h1>
+    </form>
 
-    <div class="welcome">   
-    <!--PRESENTATION-->    
 
+    <!--PRESENTATION--> 
+
+        <div class="welcome">   
+    
         <section class="site_presentation">
-            <h2>Réservez le menu qui<br> vous convient</h2>
-            <p>Découvrez des restaurants d'exception,<br> sélectionnés par nos soins.</p>
-        <button class=" btn btn__btn-explorer" href="">Explorer nos restaurants</button>
+                <h2>Réservez le menu qui<br> vous convient</h2>
+                <p>Découvrez des restaurants d'exception,<br> sélectionnés par nos soins.</p>
+                <a href="#restaurants"><button class=" btn btn__btn-explorer">Explorer nos restaurants</button></a>
         
         </section>
 
     <!--FONCTIONNEMENT-->    
 
         <section class="steps">
-            <h2>Fonctionnement</h2>
 
-         <div class="steps__choice">
-            <div class="number">
-                <p>1</p>
-            </div>
-            <i class="fa-solid fa-mobile-screen-button"></i>
-            <h3>Choisissez un restaurant</h3>
-         </div>
+                <h2>Fonctionnement</h2>
 
-         <div class="steps__choice">
-            <div class="number">
-                <p>2</p>
-            </div>
-            <i class="fa-solid fa-list"></i>
-            <h3>Composez votre menu</h3>
-         </div>
 
-         <div class="steps__choice">
-            <div class="number">
-                <p>3</p>
-            </div>
-            <i class="fa-solid fa-store"></i>
-            <h3>Dégustez au restaurant</h3>
-         </div>   
+            <a href="#restaurants">
+                <div class="steps__choice">
+                    <div class="number">
+                        <p>1</p>
+                    </div>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h3>Choisissez un restaurant</h3>
+                </div>
+            </a>
+
+                <div class="steps__choice">
+                    <div class="number">
+                        <p>2</p>
+                    </div>
+                        <i class="fa-solid fa-list"></i>
+                        <h3>Composez votre menu</h3>
+                </div>
+
+                <div class="steps__choice">
+                    <div class="number">
+                        <p>3</p>
+                    </div>
+                        <i class="fa-solid fa-store"></i>
+                        <h3>Dégustez au restaurant</h3>
+                </div>   
 
         </section>
-    </div>
+        </div>
+
     <!--RESTAURANTS-->   
     
-        <section class="restaurants">
+    <section class="restaurants" id="restaurants">
+        
             <h2 class="restaurants__titre">Restaurants</h2>
 
-            <div class="restaurants__card">
-                <a href="./La_palette_du_goût.html" target="_blank">
-                        <img class="restaurants__card--photo" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash(2).jpg" alt="La Palette du Goût">
-                    <div class="restaurants__card--name">
-                        <h3>La palette du goût</h3> 
-                        <p class="restaurants__card--location">Ménilmontant</p> 
+        <div class="restaurants__card">
+            <a href="./La_palette_du_goût.html" target="_blank">
+                    <img class="restaurants__card--photo" src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash(2).jpg" alt="La Palette du Goût">
+                <div class="restaurants__card--name">
+                    <h3>La palette du goût</h3> 
+                    <p class="restaurants__card--location">Ménilmontant</p> 
+                </div>
+                                
+                    <span class="restaurants__card--new">Nouveau</span>                 
+            </a>        
+                    <div class="restaurants__card--heart">
+                        <i class="fa-regular fa-heart emptyheart">
+                        <i class="fa-solid fa-heart fullheart"></i></i>
                     </div>
-                                    
-                        <span class="restaurants__card--new">Nouveau</span>                 
-                </a>        
-                        <div class="restaurants__card--heart">
-                            <i class="fa-regular fa-heart emptyheart">
-                            <i class="fa-solid fa-heart fullheart"></i></i>
-                        </div>
-                
-            </div>
+            
+        </div>
 
-            <div class="restaurants__card">
-                <a href="./La_note_enchantée.html" target="_blank">
+        <div class="restaurants__card">
+            <a href="./La_note_enchantée.html" target="_blank">
                     <img class="restaurants__card--photo" src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash(2).jpg" alt="La note enchantée">
                 <div class="restaurants__card--name">
                     <h3>La note enchantée</h3> 
                     <p class="restaurants__card--location">Charonne</p> 
                 </div>
-                                    
-                    <span class="restaurants__card--new">Nouveau</span>                    
-                </a>
-                <div class="restaurants__card--heart">
-                    <i class="fa-regular fa-heart emptyheart">
-                    <i class="fa-solid fa-heart fullheart"></i></i>
-                </div>
-            </div>
+                                
+                <span class="restaurants__card--new">Nouveau</span>                    
+            </a>
 
-            <div class="restaurants__card">
-                <a href="./À_la_française.html" target="_blank">
+                    <div class="restaurants__card--heart">
+                        <i class="fa-regular fa-heart emptyheart">
+                        <i class="fa-solid fa-heart fullheart"></i></i>
+                    </div>
+        </div>
+
+        <div class="restaurants__card">
+            <a href="./À_la_française.html" target="_blank">
                     <img class="restaurants__card--photo" src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash(2).jpg" alt="A la farnçaise">
                 <div class="restaurants__card--name">
                     <h3>À la française</h3> 
                     <p class="restaurants__card--location">Cité rouge</p> 
                 </div>                      
-                </a>
-                <div class="restaurants__card--heart">
-                    <i class="fa-regular fa-heart emptyheart">
-                    <i class="fa-solid fa-heart fullheart"></i></i>
-                </div>
+            </a>
 
-            </div>
+                    <div class="restaurants__card--heart">
+                        <i class="fa-regular fa-heart emptyheart">
+                        <i class="fa-solid fa-heart fullheart"></i></i>
+                    </div>
+        </div>
 
-            <div class="restaurants__card">
-                <a href="./Le_délice_des_sens.html" target="_blank">
+        <div class="restaurants__card">
+            <a href="./Le_délice_des_sens.html" target="_blank">
                     <img class="restaurants__card--photo" src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash(2).jpg" alt="La note enchantée">
                 <div class="restaurants__card--name">
                     <h3>Le délice des sens</h3> 
                     <p class="restaurants__card--location">Folies-Méricourt</p> 
                 </div>                    
-                </a>
-                <div class="restaurants__card--heart">
-                    <i class="fa-regular fa-heart emptyheart">
-                    <i class="fa-solid fa-heart fullheart"></i></i>
-                </div>
-            </div>
+            </a>
+
+                    <div class="restaurants__card--heart">
+                        <i class="fa-regular fa-heart emptyheart">
+                        <i class="fa-solid fa-heart fullheart"></i></i>
+                    </div>
+        </div>
 
 
-        </section>
+    </section>
     
 
     <footer class="footer">

@@ -3,6 +3,12 @@
     margin-bottom: 5rem; 
     @include text-regular;
 
+        & a{
+            text-decoration: none;
+            color: black;
+        }
+    
+
          & h2{
 
              
@@ -14,6 +20,7 @@
      
              margin-right: auto;
              flex-basis: 60%;
+             
             }
  
          & i{

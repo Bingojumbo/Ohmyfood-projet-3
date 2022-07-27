@@ -1,13 +1,8 @@
 .header
 {
-   text-align: center;
-   
+   text-align: center;   
    margin-bottom: 0.3rem;
    @include text-logo;
-
-   
-
-   
 }
 
 .header_restaurantpage{
@@ -35,32 +30,25 @@
       
 }
 
-.icon_location
-{
-color: $colour-icon;
-background: $colour-background;
-height: 3rem;
-display: flex;
-justify-content: center;
-align-items: center;
+.icon_location{
 
+   color: $colour-icon;
+   background: $colour-background;
+   height: 3rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0px 2px 5px 2px $colour-shadow inset;
 
-box-shadow: 0px 2px 5px 2px $colour-shadow inset;
+      & i{      
+         padding-right: 1.5rem;
+         font-size: 1rem;
+      }
 
-   & i{      
-      padding-right: 1.5rem;
-      font-size: 1rem;
-   }
-
-   & h1{
-      @include text-regular;
-      font-size: 1.1rem;
-      font-weight: 500;
-      
-   }
+      & h1{
+         @include text-regular;
+         font-size: 1.1rem;
+         font-weight: 500;
+      }
 
 }
-
-
-
-
