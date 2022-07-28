@@ -172,9 +172,17 @@
 
     }
 
-    .menu__header--name{
-        padding-top: 4%;
+    .menu{
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+
+        &__header--name{
+            padding-top: 4%;
+        }
     }
+
+    
 
      
 
